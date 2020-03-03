@@ -215,6 +215,14 @@ img {
   color: #212529;
   text-decoration: none;
 }
+.change {
+  -ms-transform: rotate(360deg);
+  /* IE 9 */
+  -webkit-transform: rotate(360deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(360deg);
+  transition-duration: 5s;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed #C0C0C0;
@@ -349,4 +357,12 @@ img {
 .home .content-pick .destination .btn:hover {
   background: #FFFFFF;
   color: #17A2B8;
+}
+.change {
+  -ms-transform: rotate(360deg);
+  /* IE 9 */
+  -webkit-transform: rotate(360deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(360deg);
+  transition-duration: 5s;
 }
