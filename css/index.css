@@ -215,6 +215,14 @@ img {
   color: #212529;
   text-decoration: none;
 }
+.change {
+  -ms-transform: rotate(360deg);
+  /* IE 9 */
+  -webkit-transform: rotate(360deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(360deg);
+  transition-duration: 5s;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed #C0C0C0;
@@ -349,4 +357,31 @@ img {
 .home .content-pick .destination .btn:hover {
   background: #FFFFFF;
   color: #17A2B8;
+}
+.change {
+  -ms-transform: rotate(360deg);
+  /* IE 9 */
+  -webkit-transform: rotate(360deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(360deg);
+  transition-duration: 5s;
+}
+.slide {
+  position: absolute;
+  left: -100px;
+  background: blue;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slide 6s forwards;
+  animation-delay: 0;
+}
+@-webkit-keyframes slide {
+  100% {
+    left: 0;
+  }
+}
+@keyframes slide {
+  100% {
+    left: 0;
+  }
 }
